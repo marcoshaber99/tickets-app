@@ -1,12 +1,33 @@
-import React from 'react'
+import { notFound } from 'next/navigation'
+
+export async function generateStaticParams() {
+  const response = await fetch('http://localhost:4000/tickets')
+
+  const tickets = await response.json() 
+
+  return tickets.map((ticket) => ({
+    id: ticket.id,
+  }))
+}
 
 async function getTicket(id) {
-  const res = await fetch('http://localhost:4000/tickets/' + id, {
+
+  //imitate delay
+  await new Promise((resolve) => {
+    setTimeout(resolve, 2000)
+  })
+
+  const response = await fetch('http://localhost:4000/tickets/' + id, {
     next: {
       revalidate: 60, 
     },
   })
-  const json =  res.json()
+
+  if(!response.ok) { 
+    notFound()
+  }
+
+  const json =  response.json()
 
   return json
 }

@@ -1,7 +1,12 @@
 import Link from 'next/link'
-import React from 'react'
 
 async function getTickets() {
+
+  //imitate delay
+  await new Promise((resolve) => {
+    setTimeout(resolve, 2000)
+  })
+
   const res = await fetch('http://localhost:4000/tickets', {
     next: {
       revalidate: 0, 
@@ -14,7 +19,7 @@ async function getTickets() {
  
 export default async function TicketList() {
 
-  const tickets = await getTickets() // get tickets from API endpoint 
+  const tickets = await getTickets()
 
   return (
     <>
