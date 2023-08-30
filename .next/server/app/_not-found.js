@@ -256,7 +256,6 @@ const tree = {
         },
         {
         'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6970)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/layout.jsx"],
-'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 535)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/loading.jsx"],
 'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1912)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/not-found.jsx"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7481))).default(props))],
@@ -307,7 +306,7 @@ const routeModule = new AppPageRouteModule({
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,835,360], () => (__webpack_exec__(7490)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,835,117], () => (__webpack_exec__(7490)));
 module.exports = __webpack_exports__;
 
 })();

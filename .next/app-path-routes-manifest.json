@@ -1,8 +1,10 @@
 {
-  "/page": "/",
   "/_not-found": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
-  "/tickets/page": "/tickets",
-  "/tickets/[id]/page": "/tickets/[id]",
-  "/tickets/create/page": "/tickets/create"
+  "/(dashboard)/page": "/",
+  "/(auth)/login/page": "/login",
+  "/(dashboard)/tickets/page": "/tickets",
+  "/(auth)/signup/page": "/signup",
+  "/(dashboard)/tickets/create/page": "/tickets/create",
+  "/(dashboard)/tickets/[id]/page": "/tickets/[id]"
 }
