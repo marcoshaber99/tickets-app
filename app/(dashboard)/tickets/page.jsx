@@ -3,6 +3,10 @@ import { Suspense } from "react"
 import Loading from "../loading"
 import TicketList from "./TicketList"
 
+export const metadata = {
+  title: "Haber's Helpdesk | Tickets" ,
+}
+
 export default function Tickets() {
   return (
     <main>

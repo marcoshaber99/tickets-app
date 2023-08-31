@@ -1,10 +1,10 @@
 {
-  "/_not-found": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
   "/(dashboard)/page": "/",
   "/(auth)/login/page": "/login",
-  "/(dashboard)/tickets/page": "/tickets",
+  "/(dashboard)/[...not-found]/page": "/[...not-found]",
   "/(auth)/signup/page": "/signup",
   "/(dashboard)/tickets/create/page": "/tickets/create",
+  "/(dashboard)/tickets/page": "/tickets",
   "/(dashboard)/tickets/[id]/page": "/tickets/[id]"
 }

@@ -304,8 +304,9 @@ const tree = {
       ]
       },
         {
-        'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5215)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/(dashboard)/loading.jsx"],
-'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 5493, 23)), "next/dist/client/components/not-found-error"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9683)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/(dashboard)/layout.jsx"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5215)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/(dashboard)/loading.jsx"],
+'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9439)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/(dashboard)/not-found.jsx"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7481))).default(props))],
     apple: [],
@@ -317,8 +318,8 @@ const tree = {
       ]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6970)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/layout.jsx"],
-'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1912)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/not-found.jsx"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8481)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/layout.jsx"],
+'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 5493, 23)), "next/dist/client/components/not-found-error"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7481))).default(props))],
     apple: [],
@@ -365,13 +366,6 @@ const routeModule = new AppPageRouteModule({
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4835))
-
-/***/ }),
-
-/***/ 5303:
-/***/ (() => {
-
-
 
 /***/ }),
 
@@ -492,35 +486,6 @@ function CreateForm() {
 
 /***/ }),
 
-/***/ 5215:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Loading)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-function Loading() {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-        className: "text-center",
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                className: "text-primary",
-                children: "Loading..."
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                children: "Hopefully not for to long"
-            })
-        ]
-    });
-}
-
-
-/***/ }),
-
 /***/ 8355:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -583,7 +548,7 @@ module.exports = __webpack_require__(696)
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,835,493,117], () => (__webpack_exec__(6557)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,508,662,355,516], () => (__webpack_exec__(6557)));
 module.exports = __webpack_exports__;
 
 })();

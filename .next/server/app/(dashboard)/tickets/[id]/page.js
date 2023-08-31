@@ -328,8 +328,9 @@ const tree = {
       ]
       },
         {
-        'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5215)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/(dashboard)/loading.jsx"],
-'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 5493, 23)), "next/dist/client/components/not-found-error"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9683)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/(dashboard)/layout.jsx"],
+'loading': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5215)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/(dashboard)/loading.jsx"],
+'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9439)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/(dashboard)/not-found.jsx"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7481))).default(props))],
     apple: [],
@@ -341,8 +342,8 @@ const tree = {
       ]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6970)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/layout.jsx"],
-'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1912)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/not-found.jsx"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8481)), "/Users/marcohaber/Documents/nextjs/tickets-app/app/layout.jsx"],
+'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 5493, 23)), "next/dist/client/components/not-found-error"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7481))).default(props))],
     apple: [],
@@ -395,42 +396,6 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_
 
 /***/ }),
 
-/***/ 5303:
-/***/ (() => {
-
-
-
-/***/ }),
-
-/***/ 5215:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Loading)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-function Loading() {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-        className: "text-center",
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                className: "text-primary",
-                children: "Loading..."
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                children: "Hopefully not for to long"
-            })
-        ]
-    });
-}
-
-
-/***/ }),
-
 /***/ 7179:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -480,6 +445,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ TicketDetails),
 /* harmony export */   dynamicParams: () => (/* binding */ dynamicParams),
+/* harmony export */   generateMetadata: () => (/* binding */ generateMetadata),
 /* harmony export */   generateStaticParams: () => (/* binding */ generateStaticParams)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
@@ -490,6 +456,13 @@ __webpack_require__.r(__webpack_exports__);
 
 const dynamicParams = true // default val = true
 ;
+async function generateMetadata({ params }) {
+    const ticket = await getTicket(params.id);
+    return {
+        title: `Haber's Helpdesk | ${ticket.title}`,
+        description: ticket.body.slice(0, 200)
+    };
+}
 async function generateStaticParams() {
     const res = await fetch("http://localhost:4000/tickets");
     const tickets = await res.json();
@@ -556,7 +529,7 @@ async function TicketDetails({ params }) {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,835,493,565,980,117], () => (__webpack_exec__(7870)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,508,662,565,980,355,516], () => (__webpack_exec__(7870)));
 module.exports = __webpack_exports__;
 
 })();
