@@ -1,24 +1,19 @@
 {
   "pages": {
-    "/(dashboard)/layout": [
+    "/(dashboard)/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/layout.js"
-    ],
-    "/(dashboard)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/page.js"
+      "static/chunks/app/(dashboard)/loading.js"
     ],
     "/(dashboard)/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/not-found.js"
     ],
-    "/(dashboard)/loading": [
+    "/(dashboard)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/loading.js"
+      "static/chunks/app/(dashboard)/layout.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -26,25 +21,35 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(dashboard)/[...not-found]/page": [
+    "/(auth)/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/[...not-found]/page.js"
+      "static/chunks/app/(auth)/login/page.js"
+    ],
+    "/(auth)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(auth)/layout.js"
     ],
     "/(dashboard)/tickets/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/tickets/page.js"
     ],
-    "/(dashboard)/tickets/[id]/page": [
+    "/(auth)/signup/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/tickets/[id]/page.js"
+      "static/chunks/app/(auth)/signup/page.js"
     ],
-    "/(dashboard)/tickets/[id]/not-found": [
+    "/(dashboard)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/tickets/[id]/not-found.js"
+      "static/chunks/app/(dashboard)/page.js"
+    ],
+    "/(dashboard)/tickets/create/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/tickets/create/page.js"
     ]
   }
 }
